@@ -1,0 +1,48 @@
+@media screen and (max-width: 1024px) {
+    .banner-title {
+        font-size: 40px;
+    }
+    #counter {
+        .counter-num {
+            font-size: 10.16vw;
+        }
+        .counter-title 
+        {
+            font-size: 4.69vw;
+        }
+    }
+    .app-store-title {
+        font-size: 6.25vw;
+    }
+}
+@media screen and (max-width: 768px) {
+    #counter {
+        .counter-num {
+            font-size: 9.38vw;
+        }
+        .counter-title 
+        {
+            font-size: 4.17vw;
+        }
+    }
+    
+}
+@media screen and (max-width: 480px) {
+    #counter {
+        .counter-num {
+            font-size: 10vw;
+        }
+        .counter-title 
+        {
+            font-size: 6.66vw;
+        }
+    }
+    .app-store-title {
+        font-size: 8.33vw;
+    }
+    .app-store-section {
+        .app-store-img {
+            height: 38px;
+        }
+    }
+}

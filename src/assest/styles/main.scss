@@ -1,0 +1,203 @@
+:root {
+    --light_primary: #FF5156A9;
+    --light_onPrimary: #FFFFFFFF;
+    --light_primaryContainer: #FFE1E0FF;
+    --light_onPrimaryContainer: #FF070764;
+    --light_secondary: #FFFE8066;
+    --light_onSecondary: #FFFFFFFF;
+    --light_secondaryContainer: #FFD881FF;
+    --light_onSecondaryContainer: #FFFFFFFF;
+    --light_tertiary: #FFFE4F93;
+    --light_onTertiary: #FFFFFFFF;
+    --light_tertiaryContainer: #FFB24DFE;
+    --light_onTertiaryContainer: #FFFFD9E1;
+    --light_error: #FFBA1A1A;
+    --light_errorContainer: #FFFFDAD6;
+    --light_onError: #FFFFFFFF;
+    --light_onErrorContainer: #FF410002;
+    --light_background: #FFF8FAF0;
+    --light_onBackground: #FF212129;
+    --light_surface: #FFF8FAF0;
+    --light_onSurface: #FF212129;
+    --light_surfaceVariant: #FFF3F5EA;
+    --light_onSurfaceVariant: #FF4A4A4B;
+    --light_outline: #FF777680;
+    --light_inverseOnSurface: #FFF3EFF4;
+    --light_inverseSurface: #ff000000;
+    --light_inversePrimary: #FFBFC1FF;
+    --light_surfaceTint: #FF5156A9;
+    --light_outlineVariant: #CDECECEC;
+    --light_scrim: #FF000000;
+    --dark_primary: #FFBFC1FF;
+    --dark_onPrimary: #FF212578;
+    --dark_primaryContainer: #FF393D8F;
+    --dark_onPrimaryContainer: #FFE1E0FF;
+    --dark_secondary: #FFFE8066;
+    --dark_onSecondary: #FF630E01;
+    --dark_secondaryContainer: #FFD881FF;
+    --dark_onSecondaryContainer: #FFFFFFFF;
+    --dark_tertiary: #FFFE4F93;
+    --dark_onTertiary: #ffffffff;
+    --dark_tertiaryContainer: #FFB24DFE;
+    --dark_onTertiaryContainer: #FFFFD9E1;
+    --dark_error: #FFFFB4AB;
+    --dark_errorContainer: #FF93000A;
+    --dark_onError: #FF690005;
+    --dark_onErrorContainer: #FFFFDAD6;
+    --dark_background: #FF212129;
+    --dark_onBackground: #FFE5E1E6;
+    --dark_surface: #FF212129;
+    --dark_onSurface: #FFE5E1E6;
+    --dark_surfaceVariant: #FF2C2C33;
+    --dark_onSurfaceVariant: #FFF5F5F5;
+    --dark_outline: #FF373737;
+    --dark_inverseOnSurface: #FF212129;
+    --dark_inverseSurface: #ffffffff;
+    --dark_inversePrimary: #FF5156A9;
+    --dark_surfaceTint: #FFBFC1FF;
+    --dark_outlineVariant: #FF383838;
+    --dark_scrim: #FF000000;
+    --seed: #FF212129;
+}
+
+body .App {
+    background-color: #121212;
+    color: var(--light_onPrimary)
+}
+
+header {
+    .nav-item {
+        border: 2px solid transparent;
+        margin: 10px 12px;
+
+        a {
+            display: inline-block;
+            color: var(--light_onPrimary);
+            padding: 10px 24px !important;
+            font-size: 20px;
+            font-weight: 500;
+            text-decoration: none;
+        }
+
+        &.active,
+        &:hover {
+            border: 2px solid var(--light_onPrimary);
+            border-radius: 30px;
+        }
+    }
+}
+
+.home-banner {
+    height: calc(100vh - 90px);
+    width: 100%;
+    background: linear-gradient(135deg, #fc0148, #fd7f30);
+    background-image: url('https://kinemaster.com/_next/static/media/img_background_home(1920).3ce4a12f.webp');
+    background-size: cover;
+    background-position: top;
+}
+
+.banner-title {
+    font-size: 56px;
+}
+
+section:not(.home-banner) {
+    padding: 5vw 0;
+}
+
+.item-row-gap {
+    row-gap: 2.5vw;
+}
+
+// CSS FOR BLOG ITEM
+.blog-item {
+    display: flex;
+
+    .blog-thumb {
+        width: 62px;
+        height: 62px;
+
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+    }
+
+    .blog-content {
+        width: calc(100% - 64px);
+        padding-left: 20px;
+    }
+}
+
+// CSS FOR COUNTER
+#counter {
+    background-color: #282b31;
+
+    .counter-num {
+        font-size: 6.6vw;
+        font-weight: 700;
+    }
+
+    .counter-title {
+        font-size: 2.5vw;
+    }
+}
+
+// CSS FOR APP-STORE
+#app-store-section {
+    background: linear-gradient(135deg, #fc0148, #fd403c 39.25%, #fd7f30);
+}
+
+.app-store-title {
+    font-size: 64px;
+    padding: 0 14px;
+}
+
+.app-store-section {
+    grid-gap: 0 2.5vw;
+    .app-store-img {
+        display: inline-block;
+        height: 60px;
+        width: auto;
+
+        img {
+            height: 100%;
+            width: auto;
+        }
+    }
+}
+
+// CSS FOR FOOTER
+#footer {
+    background-color: #1a1a1a;
+
+    .social-icons-section {
+        gap: 0 36px;
+
+        .social-icon {
+            width: 36px;
+            height: auto;
+            display: inline-block;
+
+            img {
+                width: 100%;
+                height: auto;
+                object-fit: contain;
+            }
+        }
+    }
+
+    .footer-menu-item {
+        gap: 0 36px;
+
+        a {
+            text-decoration: none;
+            color: #6a6a6a
+        }
+
+    }
+
+    p.copy-des {
+        color: #6a6a6a
+    }
+}
