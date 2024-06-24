@@ -1,58 +1,126 @@
+
+import {BsPenFill, BsCameraReelsFill, BsFillPeopleFill, BsFillPlayBtnFill, BsFileZipFill, BsGearFill} from "react-icons/bs"
 const dummyData = {
   vission: [
     {
-      title: "High Quality Templates",
-      desc: "KineMaster provides you with thousands of trending video templates. Swipe through them on the Mix screen and pick one to create your own special video, fast and easy! Templates are ready for YouTube, Tiktok, Instagram, and other social media platforms.",
+      title: "High-Quality Video Lectures",
+      desc: "Deliver crystal-clear video lectures up to 4K resolution. Choose between H.264 and HEVC codecs for compatibility and smaller file sizes. Capture up to 60 FPS with customizable bitrates for smooth playback.",
     },
     {
-      title: "Template Share",
-      desc: "Share your own videos as video templates with the world. Millions of KineMaster users will enjoy watching them and use them to create their own videos.",
+      title: "High-Fidelity Audio for Clear Learning",
+      desc: "Ensure clear audio in your lectures with dual-channel support and advanced noise cancellation. Experience audio quality up to 320 kbps and 96 kHz, with an option to mute for focused learning.",
     },
     {
-      title: "Project Save",
-      desc: "Save your video projects in cloud storage, so you can edit them on the other devices later. You can also share them with your friends by sending the links through apps like WhatsApp, Facebook Messenger, Snapchat, WeChat, Line, etc.",
+      title: "Effortless Lecture Management",
+      desc: "Simplify lecture preparation and sharing by importing and exporting lectures as cslide files. Customize content effortlessly to suit your teaching style and enhance student engagement.",
     },
   ],
   mission: [
     {
-      title: "Tons of Features",
-      desc: "KineMaster provides tons of editing features and functions, with an intuitive UI, optimized for professional grade video editing. You can add as many videos, images, texts, and layers as you want.",
+      title: "Drawing and Annotation Tools",
+      desc: "Enhance your lecture videos with versatile drawing and annotation tools in Cloudemy Studio. Highlight key concepts, annotate diagrams, and draw attention to important details, ensuring clarity and engagement for your students.",
     },
     {
-      title: "Tons of Features",
-      desc: "KineMaster provides tons of editing features and functions, with an intuitive UI, optimized for professional grade video editing. You can add as many videos, images, texts, and layers as you want.",
+      title: "Export Lecture Notes as PDF",
+      desc: "Easily share comprehensive lecture notes with your students by exporting them as PDF files directly from Cloudemy Studio. Provide structured content and supplementary materials that complement your video lectures, fostering a more effective learning experience.",
     },
   ],
   blog:[
     {
-      thumb: "https://kinemaster.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ficon-videospeed.a6a250bb.png&w=256&q=75",
-      title: "Chroma Key",
-      desc:"Composite your green screen video with other videos using Chroma Key. Alpha mask, preview, and even fine-tuning are available."
+      thumb: <BsFillPlayBtnFill size={"lg"} />,
+      title: "Seamlessly Record Video Lectures",
+      desc:[
+        {
+          list:"Effortlessly record your lectures using images, PDFs, and PowerPoint presentations."
+        },
+        {
+          list:"Import images, PDFs with custom settings like importing page range, and even import PPTs."
+        },
+        {
+          list:"Everything is saved in a single .cslide file for easy sharing and importing."
+        }
+      ]
     },
     {
-      thumb: "https://kinemaster.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ficon-magic.cce573c6.png&w=256&q=75",
-      title: "Magic Remover",
-      desc:"Try Magic Remover! AI technology makes it possible to remove the background from your videos with just a few finger taps."
+      thumb: <BsFillPeopleFill/>,
+      title: "Enhance Student Engagement",
+      desc:[
+        {
+          list:"Create dynamic content that enhances student engagement and comprehension."
+        },
+        {
+          list:"Customize each slide with options to modify images, including crop, rotate, and invert colors."
+        },
+        {
+          list:"Choose a custom background color for each slide to match your lesson theme."
+        }
+      ]
     },
     {
-      thumb: "",
-      title: "Transparent Backgrounds",
-      desc:"Create videos with transparent backgrounds on your Android or iOS smartphone! Use alpha videos as media sources in other video projects or with Apple's Keynote."
+      thumb: <BsPenFill />,
+      title: "Powerful Drawing and Annotation Tools",
+      desc:[
+        {
+          list:"Write and draw directly on slides using your finger or stylus."
+        },
+        {
+          list:"Draw shapes like triangles, circles, squares, rectangles, lines, arrows, pentagons, and hexagons."
+        },
+        {
+          list:"Use the arrow pointer tool to highlight specific elements on the current slide."
+        }
+      ]
     },
     {
-      thumb:"",
-      title: "Image Quality Improvements",
-      desc: "Enhance low-resolution media using the AI-powered Super Resolution plug-in for high-resolution results!",
+      thumb:<BsCameraReelsFill/>,
+      title: "Convenient Recording Features",
+      desc: [
+        {
+          list:"Easily rearrange slides using the grid view feature."
+        },
+        {
+          list:"Pick any color from the color spectrum palette for pens, shapes, and backgrounds."
+        },
+        {
+          list:"Download drawn slides as images or PDFs for easy sharing and distribution."
+        }
+      ],
     },
     {
-      thumb: "",
-      title: "Video Speed & Reverse",
-      desc:"You can create slow motion and sped up videos by adjusting the playback speed. The speed can be dialed from ⅛x to 16x, and reverse playback is also possible."
+      thumb: <BsFileZipFill />,
+      title: "Sharing Whole Presentation as One File",
+      desc:[
+        {
+          list:"Create a lecture file using images, PDFs, PPTs, and make all needed modifications."
+        },
+        {
+          list:"Export the entire file as a .cslide file and share it with others."
+        },
+        {
+          list:"Simply import the .cslide file on another device to start recording without any hassle."
+        }
+      ]
     },
     {
-      thumb: "",
-      title: "Color Filter & Adjustment",
-      desc:"You can adjust the contrast, brightness, saturation, hue, temperature, highlights, shadows, and even the style of your footage to improve the visual quality."
+      thumb: <BsGearFill />,
+      title: "Advanced Video Settings:",
+      desc:[
+        {
+          list:"Record videos in resolutions up to 4K for stunning clarity."
+        },
+        {
+          list:"Enjoy dual-channel audio recording support with noise cancellation for crisp, clear sound"
+        },
+        {
+          list:"Customize audio quality settings with options for bitrate and frequency up to 96kHz."
+        },
+        {
+          list:"Choose from a range of video quality settings, from 480p to 4K, with custom frame rate settings up to 60 fps."
+        },
+        {
+          list:"Select between AVC and HEVC encoder options for optimal video compression."
+        }
+      ]
     },
   ]
 };

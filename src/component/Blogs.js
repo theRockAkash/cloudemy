@@ -17,11 +17,21 @@ const Blogs = () => {
                 <Col lg={6} key={`vission_${i}`}>
                   <div className="blog-item">
                     <div className="blog-thumb">
-                      <img src={item.thumb ? item.thumb : "https://kinemaster.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ficon-magic.cce573c6.png&w=256&q=75"} alt="" />
+                      {item.thumb ? item.thumb : ""}
+                      
                     </div>
                     <div className="blog-content">
                       <h4>{item.title ? item.title : ""}</h4>
-                      <p>{item.desc ? item.desc : ""}</p>
+                      {/* <p>{item.desc ? item.desc : ""}</p> */}
+                      <ul>
+                            {item?.desc?.length > 0 ? (
+                              item.desc.map((d,k)=>{
+                                return(
+                                  <li key={`d_${k}`}>{d.list ? d.list : ''}</li>
+                                )
+                              })
+                            ) : ''}
+                          </ul>
                     </div>
                   </div>
                 </Col>

@@ -1,71 +1,90 @@
 :root {
-    --light_primary: #FF5156A9;
-    --light_onPrimary: #FFFFFFFF;
-    --light_primaryContainer: #FFE1E0FF;
-    --light_onPrimaryContainer: #FF070764;
-    --light_secondary: #FFFE8066;
-    --light_onSecondary: #FFFFFFFF;
-    --light_secondaryContainer: #FFD881FF;
-    --light_onSecondaryContainer: #FFFFFFFF;
-    --light_tertiary: #FFFE4F93;
-    --light_onTertiary: #FFFFFFFF;
-    --light_tertiaryContainer: #FFB24DFE;
-    --light_onTertiaryContainer: #FFFFD9E1;
-    --light_error: #FFBA1A1A;
-    --light_errorContainer: #FFFFDAD6;
-    --light_onError: #FFFFFFFF;
-    --light_onErrorContainer: #FF410002;
-    --light_background: #FFF8FAF0;
-    --light_onBackground: #FF212129;
-    --light_surface: #FFF8FAF0;
-    --light_onSurface: #FF212129;
-    --light_surfaceVariant: #FFF3F5EA;
-    --light_onSurfaceVariant: #FF4A4A4B;
-    --light_outline: #FF777680;
-    --light_inverseOnSurface: #FFF3EFF4;
-    --light_inverseSurface: #ff000000;
-    --light_inversePrimary: #FFBFC1FF;
-    --light_surfaceTint: #FF5156A9;
+    --light_primary: #5156A9;
+    --light_onPrimary: #FFFFFF;
+    --light_primaryContainer: #E1E0FF;
+    --light_onPrimaryContainer: #070764;
+    --light_secondary: #FE8066;
+    --light_onSecondary: #FFFFFF;
+    --light_secondaryContainer: #D881FF;
+    --light_onSecondaryContainer: #FFFFFF;
+    --light_tertiary: #FE4F93;
+    --light_onTertiary: #FFFFFF;
+    --light_tertiaryContainer: #B24DFE;
+    --light_onTertiaryContainer: #FFD9E1;
+    --light_error: #BA1A1A;
+    --light_errorContainer: #FFDAD6;
+    --light_onError: #FFFFFF;
+    --light_onErrorContainer: #410002;
+    --light_background: #F8FAF0;
+    --light_onBackground: #212129;
+    --light_surface: #F8FAF0;
+    --light_onSurface: #212129;
+    --light_surfaceVariant: #F3F5EA;
+    --light_onSurfaceVariant: #4A4A4B;
+    --light_outline: #777680;
+    --light_inverseOnSurface: #F3EFF4;
+    --light_inverseSurface: #000000;
+    --light_inversePrimary: #BFC1FF;
+    --light_surfaceTint: #5156A9;
     --light_outlineVariant: #CDECECEC;
-    --light_scrim: #FF000000;
-    --dark_primary: #FFBFC1FF;
-    --dark_onPrimary: #FF212578;
-    --dark_primaryContainer: #FF393D8F;
-    --dark_onPrimaryContainer: #FFE1E0FF;
-    --dark_secondary: #FFFE8066;
-    --dark_onSecondary: #FF630E01;
-    --dark_secondaryContainer: #FFD881FF;
-    --dark_onSecondaryContainer: #FFFFFFFF;
-    --dark_tertiary: #FFFE4F93;
-    --dark_onTertiary: #ffffffff;
-    --dark_tertiaryContainer: #FFB24DFE;
-    --dark_onTertiaryContainer: #FFFFD9E1;
-    --dark_error: #FFFFB4AB;
-    --dark_errorContainer: #FF93000A;
-    --dark_onError: #FF690005;
-    --dark_onErrorContainer: #FFFFDAD6;
-    --dark_background: #FF212129;
-    --dark_onBackground: #FFE5E1E6;
-    --dark_surface: #FF212129;
-    --dark_onSurface: #FFE5E1E6;
-    --dark_surfaceVariant: #FF2C2C33;
-    --dark_onSurfaceVariant: #FFF5F5F5;
-    --dark_outline: #FF373737;
-    --dark_inverseOnSurface: #FF212129;
-    --dark_inverseSurface: #ffffffff;
-    --dark_inversePrimary: #FF5156A9;
-    --dark_surfaceTint: #FFBFC1FF;
-    --dark_outlineVariant: #FF383838;
-    --dark_scrim: #FF000000;
-    --seed: #FF212129;
+    --light_scrim: #000000;
+    --dark_primary: #BFC1FF;
+    --dark_onPrimary: #212578;
+    --dark_primaryContainer: #393D8F;
+    --dark_onPrimaryContainer: #E1E0FF;
+    --dark_secondary: #FE8066;
+    --dark_onSecondary: #630E01;
+    --dark_secondaryContainer: #D881FF;
+    --dark_onSecondaryContainer: #FFFFFF;
+    --dark_tertiary: #FE4F93;
+    --dark_onTertiary: #ffffff;
+    --dark_tertiaryContainer: #B24DFE;
+    --dark_onTertiaryContainer: #FFD9E1;
+    --dark_error: #FFB4AB;
+    --dark_errorContainer: #93000A;
+    --dark_onError: #690005;
+    --dark_onErrorContainer: #FFDAD6;
+    --dark_background: #212129;
+    --dark_onBackground: #E5E1E6;
+    --dark_surface: #212129;
+    --dark_onSurface: #E5E1E6;
+    --dark_surfaceVariant: #2C2C33;
+    --dark_onSurfaceVariant: #F5F5F5;
+    --dark_outline: #373737;
+    --dark_inverseOnSurface: #212129;
+    --dark_inverseSurface: #ffffff;
+    --dark_inversePrimary: #5156A9;
+    --dark_surfaceTint: #BFC1FF;
+    --dark_outlineVariant: #383838;
+    --dark_scrim: #000000;
+    --seed: #212129;
 }
 
+@font-face {
+    src: url('../fonts/fabFont.ttf');
+    font-family: 'fabFont';
+    font-weight: normal;
+    font-style: normal;
+}
+.navbar-brand span {
+    font-family: 'fabFont', sans-serif;
+    letter-spacing: 5px;
+}
 body .App {
     background-color: #121212;
     color: var(--light_onPrimary)
 }
 
 header {
+    .site-logo{
+        height: 35px;
+        width: auto;
+        display: inline-block;
+        img{
+            height: 100%;
+            width: 100%;
+        }
+    }
     .nav-item {
         border: 2px solid transparent;
         margin: 10px 12px;
@@ -90,12 +109,32 @@ header {
 .home-banner {
     height: calc(100vh - 90px);
     width: 100%;
-    background: linear-gradient(135deg, #fc0148, #fd7f30);
-    background-image: url('https://kinemaster.com/_next/static/media/img_background_home(1920).3ce4a12f.webp');
+    // background: linear-gradient(90deg, var(--dark_secondary), var(--dark_tertiary));
+    // background-image: url('https://kinemaster.com/_next/static/media/img_background_home(1920).3ce4a12f.webp');
+    // background-image: url('../images/baner-img.jpg');
     background-size: cover;
-    background-position: top;
+    background-position: center;
+    position: relative;
+    .banner-img{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        filter: blur(5px);
+        top: 0;
+        right: 0;
+    }
+    
 }
-
+.home-banner::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    left: 0;
+    top: 0;
+}
 .banner-title {
     font-size: 56px;
 }
@@ -113,19 +152,21 @@ section:not(.home-banner) {
     display: flex;
 
     .blog-thumb {
-        width: 62px;
-        height: 62px;
+        width: 40px;
+        height: 40px;
 
-        img {
+        img, svg {
             width: 100%;
             height: auto;
             object-fit: contain;
         }
+        
     }
 
     .blog-content {
         width: calc(100% - 64px);
         padding-left: 20px;
+        margin-top: 7px;
     }
 }
 
@@ -145,7 +186,7 @@ section:not(.home-banner) {
 
 // CSS FOR APP-STORE
 #app-store-section {
-    background: linear-gradient(135deg, #fc0148, #fd403c 39.25%, #fd7f30);
+    background: linear-gradient(90deg, var(--dark_secondary), var(--dark_tertiary));
 }
 
 .app-store-title {

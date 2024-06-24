@@ -4,6 +4,7 @@ import dummyData from "../configs/dummyData";
 import Blogs from "../component/Blogs";
 import Counter from "../component/Counter";
 import AppStore from "../component/AppStore";
+import banner from "../assest/images/baner-img.jpg";
 
 const Home = () => {
   const [vissionData, setVissionDara] = useState();
@@ -27,11 +28,11 @@ const Home = () => {
         // Start the counter when the "counter" section is in view
         const interval = setInterval(() => {
           setCount((prevCount) => {
-            if (prevCount < 6000) {
+            if (prevCount < 10000) {
               return prevCount + 1;
             } else {
               clearInterval(interval);
-              return 6000;
+              return 10000;
             }
           });
         }, 100);
@@ -46,14 +47,30 @@ const Home = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  // For video
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.muted = true;
+      videoRef.current.autoPlay = true;
+      videoRef.current.loop = true;
+      videoRef.current.controls = true;
+      videoRef.current.play().catch((error) => {
+        console.log("Autoplay failed:", error);
+      });
+    }
+  }, []);
   return (
     <Fragment>
       <section className="home-banner">
+        <img className="banner-img" src={banner} alt="CloudeMy" />
         <Container className="h-100">
           <Row className="align-items-center justify-content-center h-100">
-            <Col lg="8">
+            <Col lg="8" style={{ zIndex: 3 }}>
               <h1 className="text-white banner-title mb-3 mb-lg-5">
-                Professional Video Editing Fast & Easy
+                Professional Video Lecture Recorder Studio
               </h1>
               <AppStore />
             </Col>
@@ -62,8 +79,22 @@ const Home = () => {
       </section>
       <Container className="text-start">
         <section id="vission">
-          <Row>
-            <Col lg="6"></Col>
+          <Row className="align-items-center">
+            <Col lg="6">
+              <div>
+                <video
+                  width="100%"
+                  height="100%"
+                  ref={videoRef}
+                  className="rounded"
+                >
+                  <source
+                    src="https://samplelib.com/lib/preview/mp4/sample-5s.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </div>
+            </Col>
             <Col lg="6">
               <Row className="item-row-gap">
                 {vissionData && vissionData.length > 0
@@ -81,7 +112,7 @@ const Home = () => {
           </Row>
         </section>
         <section id="mission">
-          <Row>
+          <Row className="align-items-center">
             <Col lg="6">
               <Row className="item-row-gap">
                 {missionData && missionData.length > 0
@@ -96,7 +127,11 @@ const Home = () => {
                   : null}
               </Row>
             </Col>
-            <Col lg="6"></Col>
+            <Col lg="6">
+              <div>
+                <iframe className="rounded" width="560" height="315" src="https://www.youtube.com/embed/ixRDc_viMxk?si=HLPbFRZry27yMVix" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+            </Col>
           </Row>
         </section>
         <section id="blog">
@@ -109,7 +144,9 @@ const Home = () => {
       <section id="app-store-section">
         <Container fluid>
           <h2 className="app-store-title mb-3 mb-lg-5">
-            Create Mind-blowing Videos, Fast and Easy now!
+            Unleash Your Creativity with
+            <br />
+            Cloudemy Studio
           </h2>
           <AppStore />
         </Container>
