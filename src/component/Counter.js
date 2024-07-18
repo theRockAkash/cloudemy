@@ -1,12 +1,12 @@
-import React from 'react'
+import React from "react";
 
-const Counter = ({count}) => {
+const Counter = ({ count }) => {
   return (
     <div>
-        <h2 className='counter-num mb-0'>{count ? count : 100}+</h2>
-        <p className='counter-title'>Downloads!</p>
+      <h2 className="counter-num mb-0">{count ? count : 100}+</h2>
+      <p className="counter-title mb-0">Downloads!</p>
     </div>
-  )
-}
+  );
+};
 
-export default Counter
+export default Counter;

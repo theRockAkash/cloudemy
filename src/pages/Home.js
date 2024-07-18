@@ -69,7 +69,7 @@ const Home = () => {
         <Container className="h-100">
           <Row className="align-items-center justify-content-center h-100">
             <Col lg="8" style={{ zIndex: 3 }}>
-              <h1 className="text-white banner-title mb-3 mb-lg-5">
+              <h1 className="text-white banner-title mb-4 mb-lg-5">
                 Professional Video Lecture Recorder Studio
               </h1>
               <AppStore />
@@ -77,11 +77,11 @@ const Home = () => {
           </Row>
         </Container>
       </section>
-      <Container className="text-start">
-        <section id="vission">
+      <Container className="text-start inner-space">
+        <section id="vission" className="mb-5 pb-0 pb-xl-5">
           <Row className="align-items-center">
             <Col lg="6">
-              <div>
+              <div className="mb-3 mb-lg-0">
                 <video
                   width="100%"
                   height="100%"
@@ -101,7 +101,9 @@ const Home = () => {
                   ? vissionData.map((item, i) => {
                       return (
                         <Col lg="12" key={`vission_${i}`}>
-                          <h2>{item.title ? item.title : ""}</h2>
+                          <h2 className="content-title">
+                            {item.title ? item.title : ""}
+                          </h2>
                           <p>{item.desc ? item.desc : ""}</p>
                         </Col>
                       );
@@ -111,15 +113,17 @@ const Home = () => {
             </Col>
           </Row>
         </section>
-        <section id="mission">
+        <section id="mission" className="mb-5 pb-0 pb-xl-5">
           <Row className="align-items-center">
-            <Col lg="6">
+            <Col lg="6" className="order-1 order-lg-0">
               <Row className="item-row-gap">
                 {missionData && missionData.length > 0
                   ? missionData.map((item, i) => {
                       return (
                         <Col lg="12" key={`mission_${i}`}>
-                          <h2>{item.title ? item.title : ""}</h2>
+                          <h2 className="content-title">
+                            {item.title ? item.title : ""}
+                          </h2>
                           <p>{item.desc ? item.desc : ""}</p>
                         </Col>
                       );
@@ -128,8 +132,18 @@ const Home = () => {
               </Row>
             </Col>
             <Col lg="6">
-              <div>
-                <iframe className="rounded" width="100%" height="315" src="https://www.youtube.com/embed/ixRDc_viMxk?si=HLPbFRZry27yMVix" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <div className="mb-3 mb-lg-0">
+                <iframe
+                  className="rounded"
+                  width="100%"
+                  height="315"
+                  src="https://www.youtube.com/embed/ixRDc_viMxk?si=HLPbFRZry27yMVix"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
               </div>
             </Col>
           </Row>
@@ -138,14 +152,13 @@ const Home = () => {
           <Blogs />
         </section>
       </Container>
-      <section id="counter" ref={counterRef}>
+      <section id="counter" className="inner-space" ref={counterRef}>
         <Counter count={count} />
       </section>
-      <section id="app-store-section">
+      <section id="app-store-section" className="inner-space">
         <Container fluid>
           <h2 className="app-store-title mb-3 mb-lg-5">
-            Unleash Your Creativity with
-            <br />
+            Unleash Your Creativity with <br />
             Cloudemy Studio
           </h2>
           <AppStore />

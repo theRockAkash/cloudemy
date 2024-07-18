@@ -1,244 +1,254 @@
 :root {
-    --light_primary: #5156A9;
-    --light_onPrimary: #FFFFFF;
-    --light_primaryContainer: #E1E0FF;
-    --light_onPrimaryContainer: #070764;
-    --light_secondary: #FE8066;
-    --light_onSecondary: #FFFFFF;
-    --light_secondaryContainer: #D881FF;
-    --light_onSecondaryContainer: #FFFFFF;
-    --light_tertiary: #FE4F93;
-    --light_onTertiary: #FFFFFF;
-    --light_tertiaryContainer: #B24DFE;
-    --light_onTertiaryContainer: #FFD9E1;
-    --light_error: #BA1A1A;
-    --light_errorContainer: #FFDAD6;
-    --light_onError: #FFFFFF;
-    --light_onErrorContainer: #410002;
-    --light_background: #F8FAF0;
-    --light_onBackground: #212129;
-    --light_surface: #F8FAF0;
-    --light_onSurface: #212129;
-    --light_surfaceVariant: #F3F5EA;
-    --light_onSurfaceVariant: #4A4A4B;
-    --light_outline: #777680;
-    --light_inverseOnSurface: #F3EFF4;
-    --light_inverseSurface: #000000;
-    --light_inversePrimary: #BFC1FF;
-    --light_surfaceTint: #5156A9;
-    --light_outlineVariant: #CDECECEC;
-    --light_scrim: #000000;
-    --dark_primary: #BFC1FF;
-    --dark_onPrimary: #212578;
-    --dark_primaryContainer: #393D8F;
-    --dark_onPrimaryContainer: #E1E0FF;
-    --dark_secondary: #FE8066;
-    --dark_onSecondary: #630E01;
-    --dark_secondaryContainer: #D881FF;
-    --dark_onSecondaryContainer: #FFFFFF;
-    --dark_tertiary: #FE4F93;
-    --dark_onTertiary: #ffffff;
-    --dark_tertiaryContainer: #B24DFE;
-    --dark_onTertiaryContainer: #FFD9E1;
-    --dark_error: #FFB4AB;
-    --dark_errorContainer: #93000A;
-    --dark_onError: #690005;
-    --dark_onErrorContainer: #FFDAD6;
-    --dark_background: #212129;
-    --dark_onBackground: #E5E1E6;
-    --dark_surface: #212129;
-    --dark_onSurface: #E5E1E6;
-    --dark_surfaceVariant: #2C2C33;
-    --dark_onSurfaceVariant: #F5F5F5;
-    --dark_outline: #373737;
-    --dark_inverseOnSurface: #212129;
-    --dark_inverseSurface: #ffffff;
-    --dark_inversePrimary: #5156A9;
-    --dark_surfaceTint: #BFC1FF;
-    --dark_outlineVariant: #383838;
-    --dark_scrim: #000000;
-    --seed: #212129;
+  --light_primary: #5156a9;
+  --light_onPrimary: #ffffff;
+  --light_primaryContainer: #e1e0ff;
+  --light_onPrimaryContainer: #070764;
+  --light_secondary: #fe8066;
+  --light_onSecondary: #ffffff;
+  --light_secondaryContainer: #d881ff;
+  --light_onSecondaryContainer: #ffffff;
+  --light_tertiary: #fe4f93;
+  --light_onTertiary: #ffffff;
+  --light_tertiaryContainer: #b24dfe;
+  --light_onTertiaryContainer: #ffd9e1;
+  --light_error: #ba1a1a;
+  --light_errorContainer: #ffdad6;
+  --light_onError: #ffffff;
+  --light_onErrorContainer: #410002;
+  --light_background: #f8faf0;
+  --light_onBackground: #212129;
+  --light_surface: #f8faf0;
+  --light_onSurface: #212129;
+  --light_surfaceVariant: #f3f5ea;
+  --light_onSurfaceVariant: #4a4a4b;
+  --light_outline: #777680;
+  --light_inverseOnSurface: #f3eff4;
+  --light_inverseSurface: #000000;
+  --light_inversePrimary: #bfc1ff;
+  --light_surfaceTint: #5156a9;
+  --light_outlineVariant: #cdececec;
+  --light_scrim: #000000;
+  --dark_primary: #bfc1ff;
+  --dark_onPrimary: #212578;
+  --dark_primaryContainer: #393d8f;
+  --dark_onPrimaryContainer: #e1e0ff;
+  --dark_secondary: #fe8066;
+  --dark_onSecondary: #630e01;
+  --dark_secondaryContainer: #d881ff;
+  --dark_onSecondaryContainer: #ffffff;
+  --dark_tertiary: #fe4f93;
+  --dark_onTertiary: #ffffff;
+  --dark_tertiaryContainer: #b24dfe;
+  --dark_onTertiaryContainer: #ffd9e1;
+  --dark_error: #ffb4ab;
+  --dark_errorContainer: #93000a;
+  --dark_onError: #690005;
+  --dark_onErrorContainer: #ffdad6;
+  --dark_background: #212129;
+  --dark_onBackground: #e5e1e6;
+  --dark_surface: #212129;
+  --dark_onSurface: #e5e1e6;
+  --dark_surfaceVariant: #2c2c33;
+  --dark_onSurfaceVariant: #f5f5f5;
+  --dark_outline: #373737;
+  --dark_inverseOnSurface: #212129;
+  --dark_inverseSurface: #ffffff;
+  --dark_inversePrimary: #5156a9;
+  --dark_surfaceTint: #bfc1ff;
+  --dark_outlineVariant: #383838;
+  --dark_scrim: #000000;
+  --seed: #212129;
 }
 
 @font-face {
-    src: url('../fonts/fabFont.ttf');
-    font-family: 'fabFont';
-    font-weight: normal;
-    font-style: normal;
+  src: url("../fonts/fabFont.ttf");
+  font-family: "fabFont";
+  font-weight: normal;
+  font-style: normal;
 }
 .navbar-brand span {
-    font-family: 'fabFont', sans-serif;
-    letter-spacing: 5px;
+  font-family: "fabFont", sans-serif;
+  letter-spacing: 5px;
 }
 body .App {
-    background-color: #121212;
-    color: var(--light_onPrimary)
+  background-color: #121212;
+  color: var(--light_onPrimary);
 }
 
 header {
-    .site-logo{
-        height: 35px;
-        width: auto;
-        display: inline-block;
-        img{
-            height: 100%;
-            width: 100%;
-        }
+  .site-logo {
+    height: 35px;
+    width: auto;
+    display: inline-block;
+    img {
+      height: 100%;
+      width: 100%;
     }
-    .nav-item {
-        border: 2px solid transparent;
-        margin: 10px 12px;
+  }
+  .nav-item {
+    border: 2px solid transparent;
+    margin: 10px 12px;
 
-        a {
-            display: inline-block;
-            color: var(--light_onPrimary);
-            padding: 10px 24px !important;
-            font-size: 20px;
-            font-weight: 500;
-            text-decoration: none;
-        }
-
-        &.active,
-        &:hover {
-            border: 2px solid var(--light_onPrimary);
-            border-radius: 30px;
-        }
+    a {
+      display: inline-block;
+      color: var(--light_onPrimary);
+      padding: 10px 24px !important;
+      // font-size: 20px;
+      font-weight: 500;
+      text-decoration: none;
     }
+
+    &.active,
+    &:hover {
+      border: 2px solid var(--light_onPrimary);
+      border-radius: 30px;
+    }
+  }
 }
 
 .home-banner {
-    height: calc(100vh - 90px);
-    width: 100%;
-    // background: linear-gradient(90deg, var(--dark_secondary), var(--dark_tertiary));
-    // background-image: url('https://kinemaster.com/_next/static/media/img_background_home(1920).3ce4a12f.webp');
-    // background-image: url('../images/baner-img.jpg');
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    .banner-img{
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        filter: blur(5px);
-        top: 0;
-        right: 0;
-    }
-    
-}
-.home-banner::after {
-    content: "";
+  height: calc(100vh - 90px);
+  width: 100%;
+  // background: linear-gradient(90deg, var(--dark_secondary), var(--dark_tertiary));
+  // background-image: url('https://kinemaster.com/_next/static/media/img_background_home(1920).3ce4a12f.webp');
+  // background-image: url('../images/baner-img.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  .banner-img {
     position: absolute;
     height: 100%;
     width: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    left: 0;
+    object-fit: cover;
+    filter: blur(5px);
     top: 0;
+    right: 0;
+  }
+}
+.home-banner::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  left: 0;
+  top: 0;
 }
 .banner-title {
-    font-size: 56px;
+  font-size: 56px;
 }
 
-section:not(.home-banner) {
-    padding: 5vw 0;
+.inner-space {
+  padding: 80px 0;
 }
 
 .item-row-gap {
-    row-gap: 2.5vw;
+  row-gap: 2rem;
 }
-
+// For about section
+.content-title {
+  font-size: 35px;
+  font-weight: 700;
+}
 // CSS FOR BLOG ITEM
 .blog-item {
-    display: flex;
+  display: flex;
 
-    .blog-thumb {
-        width: 40px;
-        height: 40px;
+  .blog-thumb {
+    width: 40px;
+    height: 40px;
 
-        img, svg {
-            width: 100%;
-            height: auto;
-            object-fit: contain;
-        }
-        
+    img,
+    svg {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
     }
+  }
 
-    .blog-content {
-        width: calc(100% - 64px);
-        padding-left: 20px;
-        margin-top: 7px;
+  .blog-content {
+    width: calc(100% - 64px);
+    padding-left: 20px;
+    margin-top: 7px;
+    h4 {
+      font-size: 24px;
+      font-weight: 700;
     }
+  }
 }
 
 // CSS FOR COUNTER
 #counter {
-    background-color: #282b31;
+  background-color: #282b31;
 
-    .counter-num {
-        font-size: 6.6vw;
-        font-weight: 700;
-    }
+  .counter-num {
+    font-size: 95px;
+    font-weight: 700;
+  }
 
-    .counter-title {
-        font-size: 2.5vw;
-    }
+  .counter-title {
+    font-size: 35px;
+  }
 }
 
 // CSS FOR APP-STORE
 #app-store-section {
-    background: linear-gradient(90deg, var(--dark_secondary), var(--dark_tertiary));
+  background: linear-gradient(
+    90deg,
+    var(--dark_secondary),
+    var(--dark_tertiary)
+  );
 }
 
 .app-store-title {
-    font-size: 64px;
-    padding: 0 14px;
+  font-size: 64px;
+  padding: 0 14px;
 }
 
 .app-store-section {
-    grid-gap: 0 2.5vw;
-    .app-store-img {
-        display: inline-block;
-        height: 60px;
-        width: auto;
+  grid-gap: 0 2.5vw;
+  .app-store-img {
+    display: inline-block;
+    height: 60px;
+    width: auto;
 
-        img {
-            height: 100%;
-            width: auto;
-        }
+    img {
+      height: 100%;
+      width: auto;
     }
+  }
 }
 
 // CSS FOR FOOTER
 #footer {
-    background-color: #1a1a1a;
+  background-color: #1a1a1a;
 
-    .social-icons-section {
-        gap: 0 36px;
+  .social-icons-section {
+    gap: 0 36px;
 
-        .social-icon {
-            width: 36px;
-            height: auto;
-            display: inline-block;
+    .social-icon {
+      width: 36px;
+      height: auto;
+      display: inline-block;
 
-            img {
-                width: 100%;
-                height: auto;
-                object-fit: contain;
-            }
-        }
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
     }
+  }
 
-    .footer-menu-item {
-        gap: 0 36px;
+  .footer-menu-item {
+    gap: 0 36px;
 
-        a {
-            text-decoration: none;
-            color: #6a6a6a
-        }
-
+    a {
+      text-decoration: none;
+      color: #6a6a6a;
     }
+  }
 
-    p.copy-des {
-        color: #6a6a6a
-    }
+  p.copy-des {
+    color: #6a6a6a;
+  }
 }

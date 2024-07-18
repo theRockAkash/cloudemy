@@ -1,48 +1,66 @@
 @media screen and (max-width: 1024px) {
-    .banner-title {
-        font-size: 40px;
+  #counter {
+    .counter-num {
+      font-size: 80px;
+      font-weight: 500;
     }
-    #counter {
-        .counter-num {
-            font-size: 10.16vw;
-        }
-        .counter-title 
-        {
-            font-size: 4.69vw;
-        }
-    }
-    .app-store-title {
-        font-size: 6.25vw;
-    }
+  }
+  .app-store-title {
+    font-size: 56px;
+  }
+  .item-row-gap {
+    row-gap: 1.5rem;
+  }
 }
+@media screen and (max-width: 991px) {
+  .item-row-gap {
+    row-gap: 0.8rem;
+  }
+}
+
 @media screen and (max-width: 768px) {
-    #counter {
-        .counter-num {
-            font-size: 9.38vw;
-        }
-        .counter-title 
-        {
-            font-size: 4.17vw;
-        }
+  .content-title {
+    font-size: 30px;
+  }
+  .blog-item {
+    .blog-content {
+      h4 {
+        font-size: 20px;
+      }
     }
-    
+  }
+
+  #counter {
+    .counter-num {
+      font-size: 72px;
+    }
+    .counter-title {
+      font-size: 32px;
+    }
+  }
+  .app-store-title {
+    font-size: 48px;
+    br {
+      display: none;
+    }
+  }
+  .inner-space {
+    padding: 60px 0;
+  }
 }
 @media screen and (max-width: 480px) {
-    #counter {
-        .counter-num {
-            font-size: 10vw;
-        }
-        .counter-title 
-        {
-            font-size: 6.66vw;
-        }
+  .banner-title {
+    font-size: 40px;
+  }
+  .content-title {
+    font-size: 26px;
+  }
+  #counter {
+    .counter-num {
+      font-size: 48px;
     }
-    .app-store-title {
-        font-size: 8.33vw;
-    }
-    .app-store-section {
-        .app-store-img {
-            height: 38px;
-        }
-    }
+  }
+  .app-store-title {
+    font-size: 40px;
+  }
 }

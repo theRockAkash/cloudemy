@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer>
-      <section id="footer">
+      <section id="footer" className="inner-space">
         {/* <div className="social-icons-section pb-5 d-flex align-items-center justify-content-center">
           <Link to="/" className="social-icon" onClick={(e)=>e.preventDefault()}>
             <img
@@ -31,11 +31,17 @@ const Footer = () => {
           {/* <Link to="/"  onClick={(e)=>e.preventDefault()}>
           Terms of Service
           </Link> */}
-          <Link to="https://www.cloudemy.in/privacy-policy"  onClick={(e)=>e.preventDefault()}>
-          Privacy Policy
+          <Link
+            to="https://www.cloudemy.in/privacy-policy"
+            onClick={(e) => e.preventDefault()}
+          >
+            Privacy Policy
           </Link>
-          <Link to="https://www.cloudemy.in/about-us"  onClick={(e)=>e.preventDefault()}>
-          About Us
+          <Link
+            to="https://www.cloudemy.in/about-us"
+            onClick={(e) => e.preventDefault()}
+          >
+            About Us
           </Link>
         </div>
       </section>

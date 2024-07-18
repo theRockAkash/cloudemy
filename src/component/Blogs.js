@@ -18,20 +18,19 @@ const Blogs = () => {
                   <div className="blog-item">
                     <div className="blog-thumb">
                       {item.thumb ? item.thumb : ""}
-                      
                     </div>
                     <div className="blog-content">
                       <h4>{item.title ? item.title : ""}</h4>
                       {/* <p>{item.desc ? item.desc : ""}</p> */}
                       <ul>
-                            {item?.desc?.length > 0 ? (
-                              item.desc.map((d,k)=>{
-                                return(
-                                  <li key={`d_${k}`}>{d.list ? d.list : ''}</li>
-                                )
-                              })
-                            ) : ''}
-                          </ul>
+                        {item?.desc?.length > 0
+                          ? item.desc.map((d, k) => {
+                              return (
+                                <li key={`d_${k}`}>{d.list ? d.list : ""}</li>
+                              );
+                            })
+                          : ""}
+                      </ul>
                     </div>
                   </div>
                 </Col>
