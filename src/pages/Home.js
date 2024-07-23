@@ -1,10 +1,15 @@
 import React, { Fragment, useEffect, useRef, useState } from "react";
-import { Col, Container, Row } from "reactstrap";
+import { Col, Container, Row, UncontrolledCarousel } from "reactstrap";
 import dummyData from "../configs/dummyData";
 import Blogs from "../component/Blogs";
 import Counter from "../component/Counter";
 import AppStore from "../component/AppStore";
 import banner from "../assest/images/baner-img.jpg";
+import slide1 from "../assest/images/slide-1.jpeg"
+import slide2 from "../assest/images/slide-2.jpeg"
+import slide3 from "../assest/images/slide-3.jpeg"
+import slide4 from "../assest/images/slide-4.jpeg"
+import slide5 from "../assest/images/slide-5.jpeg"
 
 const Home = () => {
   const [vissionData, setVissionDara] = useState();
@@ -70,7 +75,7 @@ const Home = () => {
           <Row className="align-items-center justify-content-center h-100">
             <Col lg="8" style={{ zIndex: 3 }}>
               <h1 className="text-white banner-title mb-4 mb-lg-5">
-                Professional Video Lecture Recorder Studio
+              Professional Teaching Video Recorder 
               </h1>
               <AppStore />
             </Col>
@@ -81,8 +86,33 @@ const Home = () => {
         <section id="vission" className="mb-5 pb-0 pb-xl-5">
           <Row className="align-items-center">
             <Col lg="6">
-              <div className="mb-3 mb-lg-0">
-                <video
+              <div className="mb-3 mb-lg-0 image-slider">
+              <UncontrolledCarousel
+              interval={2000}
+                  items={[
+                    {
+                      key: 1,
+                      src: slide1
+                    },
+                    {
+                      key: 2,
+                      src: slide2
+                    },
+                    {
+                      key: 3,
+                      src: slide3
+                    },
+                    {
+                      key: 4,
+                      src: slide4
+                    },
+                    {
+                      key: 5,
+                      src: slide5
+                    }
+                  ]}
+                />
+                {/* <video
                   width="100%"
                   height="100%"
                   ref={videoRef}
@@ -92,7 +122,7 @@ const Home = () => {
                     src="https://samplelib.com/lib/preview/mp4/sample-5s.mp4"
                     type="video/mp4"
                   />
-                </video>
+                </video> */}
               </div>
             </Col>
             <Col lg="6">

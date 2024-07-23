@@ -3,7 +3,7 @@ import {BsPenFill, BsCameraReelsFill, BsFillPeopleFill, BsFillPlayBtnFill, BsFil
 const dummyData = {
   vission: [
     {
-      title: "High-Quality Video Lectures",
+      title: "High-Quality Teaching Videos",
       desc: "Deliver crystal-clear video lectures up to 4K resolution. Choose between H.264 and HEVC codecs for compatibility and smaller file sizes. Capture up to 60 FPS with customizable bitrates for smooth playback.",
     },
     {

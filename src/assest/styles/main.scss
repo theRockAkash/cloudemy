@@ -108,6 +108,7 @@ header {
 
 .home-banner {
   height: calc(100vh - 90px);
+  min-height: 400px;
   width: 100%;
   // background: linear-gradient(90deg, var(--dark_secondary), var(--dark_tertiary));
   // background-image: url('https://kinemaster.com/_next/static/media/img_background_home(1920).3ce4a12f.webp');
@@ -146,6 +147,16 @@ header {
   row-gap: 2rem;
 }
 // For about section
+.image-slider{
+  .carousel-item{
+    height: 500px;
+    img{
+      height: 100%;
+      object-fit: contain;
+      border-radius: 12px;
+    }
+  }
+}
 .content-title {
   font-size: 35px;
   font-weight: 700;
