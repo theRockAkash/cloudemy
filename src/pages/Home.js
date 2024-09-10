@@ -14,7 +14,7 @@ import slide5 from "../assest/images/slide-5.jpeg"
 const Home = () => {
   const [vissionData, setVissionDara] = useState();
   const [missionData, setMissionDara] = useState();
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(1000);
   const counterRef = useRef(null);
 
   useEffect(() => {
@@ -33,11 +33,11 @@ const Home = () => {
         // Start the counter when the "counter" section is in view
         const interval = setInterval(() => {
           setCount((prevCount) => {
-            if (prevCount < 10000) {
-              return prevCount + 1;
+            if (prevCount < 35000) {
+              return prevCount + 49;
             } else {
               clearInterval(interval);
-              return 10000;
+              return 35000;
             }
           });
         }, 100);

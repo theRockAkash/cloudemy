@@ -50,7 +50,7 @@
 }
 @media screen and (max-width: 480px) {
   .banner-title {
-    font-size: 40px;
+    font-size: 32px;
   }
   .content-title {
     font-size: 26px;
@@ -60,7 +60,12 @@
       font-size: 48px;
     }
   }
+  .app-store-section{
+    .app-store-img{
+      height: 50px;
+    }
+  }
   .app-store-title {
-    font-size: 40px;
+    font-size: 32px;
   }
 }

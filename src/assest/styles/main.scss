@@ -107,12 +107,9 @@ header {
 }
 
 .home-banner {
-  height: calc(100vh - 90px);
-  min-height: 400px;
+  min-height: 250px;
+  height: 400px;
   width: 100%;
-  // background: linear-gradient(90deg, var(--dark_secondary), var(--dark_tertiary));
-  // background-image: url('https://kinemaster.com/_next/static/media/img_background_home(1920).3ce4a12f.webp');
-  // background-image: url('../images/baner-img.jpg');
   background-size: cover;
   background-position: center;
   position: relative;
