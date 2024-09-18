@@ -8,7 +8,7 @@ const AppStore = () => {
         <img src="https://kinemaster.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fappstore-transparant.430a5db1.png&w=640&q=75" alt="App Store" />
       </Link> */}
       <Link to="https://play.google.com/store/apps/details?id=com.cloudemy.studio" target="_blank" className='app-store-img' >
-        <img src={googlePlay} alt="Google Play" />
+        <img src={googlePlay} alt="Download Cloudemy Studio on Google Play today and start creating engaging lectures!" />
       </Link>
     </div>
   )

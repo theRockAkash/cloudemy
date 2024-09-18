@@ -10,7 +10,7 @@ const Blogs = () => {
   }, []);
   return (
     <>
-      <Row className="item-row-gap">
+      <Row className="item-row-gap mt-5">
         {blogData && blogData.length > 0
           ? blogData.map((item, i) => {
               return (

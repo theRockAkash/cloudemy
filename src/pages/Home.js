@@ -5,11 +5,11 @@ import Blogs from "../component/Blogs";
 import Counter from "../component/Counter";
 import AppStore from "../component/AppStore";
 import banner from "../assest/images/baner-img.jpg";
-import slide1 from "../assest/images/slide-1.jpeg"
-import slide2 from "../assest/images/slide-2.jpeg"
-import slide3 from "../assest/images/slide-3.jpeg"
-import slide4 from "../assest/images/slide-4.jpeg"
-import slide5 from "../assest/images/slide-5.jpeg"
+import slide1 from "../assest/images/slide-1.jpeg";
+import slide2 from "../assest/images/slide-2.jpeg";
+import slide3 from "../assest/images/slide-3.jpeg";
+import slide4 from "../assest/images/slide-4.jpeg";
+import slide5 from "../assest/images/slide-5.jpeg";
 
 const Home = () => {
   const [vissionData, setVissionDara] = useState();
@@ -33,11 +33,11 @@ const Home = () => {
         // Start the counter when the "counter" section is in view
         const interval = setInterval(() => {
           setCount((prevCount) => {
-            if (prevCount < 35000) {
-              return prevCount + 49;
+            if (prevCount < 45000) {
+              return prevCount + 100;
             } else {
               clearInterval(interval);
-              return 35000;
+              return 45000;
             }
           });
         }, 100);
@@ -75,7 +75,7 @@ const Home = () => {
           <Row className="align-items-center justify-content-center h-100">
             <Col lg="8" style={{ zIndex: 3 }}>
               <h1 className="text-white banner-title mb-4 mb-lg-5">
-              Professional Teaching Video Recorder 
+                Professional Teaching Video Recorder
               </h1>
               <AppStore />
             </Col>
@@ -84,32 +84,40 @@ const Home = () => {
       </section>
       <Container className="text-start inner-space">
         <section id="vission" className="mb-5 pb-0 pb-xl-5">
-          <Row className="align-items-center">
+          <hr />
+          <h2 className="text-center">Features at a Glance</h2>
+          <hr />
+          <Row className="align-items-center pt-3">
             <Col lg="6">
               <div className="mb-3 mb-lg-0 image-slider">
-              <UncontrolledCarousel
-              interval={2000}
+                <UncontrolledCarousel
+                  interval={2000}
                   items={[
                     {
                       key: 1,
-                      src: slide1
+                      src: slide1,
+                      altText:"Want to record engaging video lectures on your phone?"
                     },
                     {
                       key: 2,
-                      src: slide2
+                      src: slide2,
+                      altText:"The ultimate tool for recording educational videos!"
                     },
                     {
                       key: 3,
-                      src: slide3
+                      src: slide3,
+                      altText:"Easily create your lessons using images, PDFs and PPTs."
                     },
                     {
                       key: 4,
-                      src: slide4
+                      src: slide4,
+                      altText:"Directly write on the slides"
                     },
                     {
                       key: 5,
-                      src: slide5
-                    }
+                      src: slide5,
+                      altText:"Unlock state of art recording features all from your phone."
+                    },
                   ]}
                 />
                 {/* <video
@@ -131,9 +139,9 @@ const Home = () => {
                   ? vissionData.map((item, i) => {
                       return (
                         <Col lg="12" key={`vission_${i}`}>
-                          <h2 className="content-title">
+                          <h3 className="content-title">
                             {item.title ? item.title : ""}
-                          </h2>
+                          </h3>
                           <p>{item.desc ? item.desc : ""}</p>
                         </Col>
                       );
@@ -151,9 +159,9 @@ const Home = () => {
                   ? missionData.map((item, i) => {
                       return (
                         <Col lg="12" key={`mission_${i}`}>
-                          <h2 className="content-title">
+                          <h3 className="content-title">
                             {item.title ? item.title : ""}
-                          </h2>
+                          </h3>
                           <p>{item.desc ? item.desc : ""}</p>
                         </Col>
                       );
@@ -168,17 +176,21 @@ const Home = () => {
                   width="100%"
                   height="315"
                   src="https://www.youtube.com/embed/ixRDc_viMxk?si=HLPbFRZry27yMVix"
-                  title="YouTube video player"
+                  title="Promo video"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   referrerpolicy="strict-origin-when-cross-origin"
                   allowfullscreen
+                  altText="Promo video"
                 ></iframe>
               </div>
             </Col>
           </Row>
         </section>
         <section id="blog">
+          <hr />
+          <h2 className="text-center">Feature Heighlights</h2>
+          <hr />
           <Blogs />
         </section>
       </Container>
