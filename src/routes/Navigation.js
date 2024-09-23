@@ -24,6 +24,7 @@ const Navigation = () => {
 
   // Update activeItem based on the current path
   useEffect(() => {
+    setIsOpen(false)
     setActiveItem(location.pathname)
   }, [location]); 
 

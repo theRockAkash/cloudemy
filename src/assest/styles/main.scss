@@ -80,11 +80,11 @@
   font-family:'Dancing Script', cursive;
   letter-spacing: 2px;
   color: #ffffff;
-  text-shadow: 6px 6px 5px #495057;
+  text-shadow: 2px 2px 5px #495057;
 }
 body .App{
-  background-color: #121212;
-  color: var(--light_onPrimary);
+  background-color: var(--dark_surface);
+  color: var(--dark_onSurface);
 }
 
 header {
@@ -114,6 +114,37 @@ header {
     &:hover {
       border: 2px solid var(--light_onPrimary);
       border-radius: 30px;
+    }
+  }
+  .navbar-toggler{
+    border-color: var(--dark_inverseSurface);
+    .navbar-toggler-icon{
+      filter: invert(1);
+    }
+    &:focus{
+      box-shadow:none
+    }
+    &:focus-visible{
+      outline: unset;
+    }
+  }
+  @media (max-width: 767px) {
+    .navbar-collapse{
+      background-color: var(--dark_surfaceVariant);
+      flex-basis: unset;
+      flex-grow: unset;
+      width: 70%;
+      margin-left: auto;
+      min-width: 100px;
+      height: calc(100vh - 64px);
+      border-radius: 8px;
+      ul{
+        li{
+          a{
+            width: 100%;
+          }
+        }
+      }
     }
   }
 }
@@ -286,6 +317,7 @@ header {
 /* CSS FOR FAQ PAGE*/
 .faq-page{
   .accordion{
+    overflow: hidden;
     --bs-accordion-border-color: var(--dark_outlineVariant);
     .accordion-button{
       background: var(--dark_background) ;
