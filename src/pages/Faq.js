@@ -96,7 +96,7 @@ const Faq = () => {
                         {item.question ? item.question : ""}
                       </AccordionHeader>
                       <AccordionBody accordionId={`faq-${i}`}>
-                        {item.solution ? item.solution : ""}
+                        {item.answer ? item.answer : ""}
                       </AccordionBody>
                     </AccordionItem>
                   );
