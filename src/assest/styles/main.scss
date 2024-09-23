@@ -80,8 +80,9 @@
   font-family:'Dancing Script', cursive;
   letter-spacing: 2px;
   color: #ffffff;
+  text-shadow: 6px 6px 5px #495057;
 }
-body .App {
+body .App{
   background-color: #121212;
   color: var(--light_onPrimary);
 }
@@ -133,6 +134,18 @@ header {
     top: 0;
     right: 0;
   }
+  &.page-banner{
+    height: 340px;
+    .banner-img{
+      filter: blur(0px);
+    }
+    .banner-title{
+      text-shadow: 3px 4px 7px #495057;
+    }
+    &::after{
+      background: rgba(0, 0, 0, 0.4);
+    }
+  }
 }
 .home-banner::after {
   content: "";
@@ -148,7 +161,7 @@ header {
 }
 
 .inner-space {
-  padding: 80px 0;
+  padding: 45px 0;
 }
 
 .item-row-gap {
@@ -269,4 +282,39 @@ header {
   p.copy-des {
     color: #6a6a6a;
   }
+}
+/* CSS FOR FAQ PAGE*/
+.faq-page{
+  .accordion{
+    --bs-accordion-border-color: var(--dark_outlineVariant);
+    .accordion-button{
+      background: var(--dark_background) ;
+      color: var(--dark_onBackground);
+      &:not(.collapsed) {
+        background: var(--dark_secondaryContainer) ;
+        color: var(--dark_onSecondaryContainer);
+        &::after{
+          filter: invert(1);
+        }
+      }
+      &:focus, &:focus-visible{
+        box-shadow: none;
+      }
+      &::after{
+        filter: contrast(0);
+      }
+    }
+    .accordion-body{
+      background: var(--dark_surfaceVariant) ;
+      color: var(--dark_onSurfaceVariant);
+    }
+  }
+}
+// For page loader
+.page-loader{
+  min-height: 150px;
+  height: 45vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

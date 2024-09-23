@@ -122,6 +122,52 @@ const dummyData = {
         }
       ]
     },
+  ],
+  faq:[
+    {
+      question: "Hello cloudemy",
+      solution: "This is the third item's accordion body.You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the .accordion-body, though the transition does limit overflow.",
+      image : "https://fastly.picsum.photos/id/791/300/200.jpg",
+      steps: [
+          {
+          image: "https://fastly.picsum.photos/id/791/200/200.jpg",
+          description: "description" 
+         },
+      ]
+    },
+    {
+      question: "Question text2",
+      solution: "This is the third item's accordion body.You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the .accordion-body, though the transition does limit overflow.",
+      image : "https://fastly.picsum.photos/id/791/300/200.jpg",
+      steps: [
+          {
+          image: "https://fastly.picsum.photos/id/791/200/200.jpg",
+          description: "description" 
+         },
+      ]
+    },
+    {
+      question: "Question text3",
+      solution: "This is the third item's accordion body.You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the .accordion-body, though the transition does limit overflow.",
+      image : "https://fastly.picsum.photos/id/791/300/200.jpg",
+      steps: [
+          {
+          image: "https://fastly.picsum.photos/id/791/200/200.jpg",
+          description: "description" 
+         },
+      ]
+    },
+    {
+      question: "Question text4",
+      solution: "This is the third item's accordion body.You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the .accordion-body, though the transition does limit overflow.",
+      image : "https://fastly.picsum.photos/id/791/300/200.jpg",
+      steps: [
+          {
+          image: "https://fastly.picsum.photos/id/791/200/200.jpg",
+          description: "description" 
+         },
+      ]
+    }
   ]
 };
 export default dummyData;

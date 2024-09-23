@@ -1,0 +1,65 @@
+{
+    "faqs": [
+      {
+        "question": "What is Cloudemy Studio?",
+        "answer": "Cloudemy Studio is a mobile app designed for teachers to easily record video lectures using images, PDFs, PPTs, and blank pages. It offers advanced annotation tools and high-quality video and audio support."
+      },
+      {
+        "question": "How do I record a lecture using Cloudemy Studio?",
+        "answer": "You can import your teaching materials like images, PDFs, or PPTs into the app. Start recording your lecture while adding annotations, changing slides, and using tools to highlight key points."
+      },
+      {
+        "question": "Can I annotate during my lecture recording?",
+        "answer": "Yes, Cloudemy Studio allows you to annotate your slides during the recording using tools like a pen, highlighter, shapes (lines, arrows, rectangles), and more."
+      },
+      {
+        "question": "What video quality options are available?",
+        "answer": "Cloudemy Studio supports video recording in resolutions up to 4K, with customizable frame rates and bit rates, ensuring high-quality output."
+      },
+      {
+        "question": "Does the app support noise cancellation?",
+        "answer": "Yes, the app comes with a noise cancellation feature to improve the clarity of your recorded audio."
+      },
+      {
+        "question": "Can I save my annotations and slides as images or PDFs?",
+        "answer": "Yes, you can save slides with annotations as images or export them as a PDF for easy sharing with your students."
+      },
+      {
+        "question": "What file formats can I export my projects to?",
+        "answer": "You can export your project as a .cslide file for future editing, sharing, or external use."
+      },
+      {
+        "question": "Does Cloudemy Studio auto-save my work?",
+        "answer": "Yes, all imported content (images, PDFs, PPTs) and changes to slides are automatically saved, ensuring your project is secure."
+      },
+      {
+        "question": "Can I import existing materials into the app?",
+        "answer": "Absolutely! You can import images, PDFs, and PPTs into Cloudemy Studio, or even add blank pages to create new content."
+      },
+      {
+        "question": "Is the app free to use?",
+        "answer": "Yes, Cloudemy Studio is completely free to use for teachers who want to record and share lectures without any cost."
+      },
+      {
+        "question": "What audio quality does Cloudemy Studio support?",
+        "answer": "Cloudemy Studio supports single and dual-channel audio recording, with up to 320 kbps at 96kHz for crystal-clear audio."
+      },
+      {
+        "question": "How can I share my recorded lectures with students?",
+        "answer": "When you record a video, it is automatically saved as an MP4 file in the Downloads/Cloudemy Studio/My Videos directory. You can easily share this video via email, cloud services, or other platforms from this location."
+      },
+      {
+        "question": "Does the app record the entire screen or just the lecture content?",
+        "answer": "Cloudemy Studio records only your selected lecture content, excluding unwanted areas like navigation or status bars."
+      },
+      {
+        "question": "Can I change the background color of my slides?",
+        "answer": "Yes, Cloudemy Studio allows you to customize the background color of your slides to suit your presentation style."
+      },
+      {
+        "question": "How do I export a project?",
+        "answer": "You can export your project as a .cslide file or save the final video to your device for easy sharing."
+      }
+    ]
+  }
+  

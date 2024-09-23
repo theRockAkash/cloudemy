@@ -6,6 +6,8 @@ import Footer from './component/Footer';
 import Home from './pages/Home';
 import Navigation from './routes/Navigation';
 import About from './pages/About';
+import Faq from './pages/Faq';
+import Blog from './pages/Blog';
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />}></Route>
           <Route exact path="/about" element={<About />}></Route>
+          <Route exact path="/faq" element={<Faq />}></Route>
+          <Route exact path="/blogs" element={<Blog />}></Route>
         </Routes>
       </div>
       <Footer />
