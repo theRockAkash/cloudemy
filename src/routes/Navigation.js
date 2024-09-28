@@ -32,7 +32,7 @@ const Navigation = () => {
 
   return (
     <header className='main-header' style={{ "position": "fixed", "top": "0", "zIndex": 9, "width": "100%" }}>
-      <Navbar expand="md" style={navbarStyle} className='custom-navbar'>
+      <Navbar expand="md" style={navbarStyle}>
         <NavbarBrand href="/">
           <div className='d-flex align-items-center'>
             <div className='site-logo me-2'>
@@ -42,7 +42,7 @@ const Navigation = () => {
           </div>
         </NavbarBrand>
         <NavbarToggler onClick={toggle} />
-        <Collapse isOpen={isOpen} navbar className='justify-content-md-end'>
+        <Collapse isOpen={isOpen} navbar className='justify-content-md-end custom-navbar'>
           <Nav className="ml-auto" navbar>
             <NavItem className={activeItem === '/' ? 'active' : ''}>
               <Link to="/" onClick={() => setActiveItem('Home')}>Home</Link>
