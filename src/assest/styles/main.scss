@@ -128,33 +128,6 @@ header {
       outline: unset;
     }
   }
-  @media only screen and (max-width: 767px) {
-    .custom-navbar{
-      .navbar-collapse{
-        flex-basis: unset !important;
-        flex-grow: unset !important;
-        width: 70%;
-        margin-left: auto;
-        min-width: 100px;
-        max-width: 250px;
-        height: calc(100vh - 64px);
-        max-height: 300px;
-        border-radius: 8px;
-        top: 62px;
-        right: 0.7rem;
-        position: fixed;
-        ul{
-          background: #d881ff !important;
-          height: 100%;
-          li{
-            a{
-              width: 100%;
-            }
-          }
-        }
-      }
-    }
-  }
 }
 
 .home-banner {
