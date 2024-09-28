@@ -8,6 +8,7 @@ import Navigation from './routes/Navigation';
 import About from './pages/About';
 import Faq from './pages/Faq';
 import Blog from './pages/Blog';
+import Contact from './pages/Contact';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route exact path="/about" element={<About />}></Route>
           <Route exact path="/faq" element={<Faq />}></Route>
           <Route exact path="/blogs" element={<Blog />}></Route>
+          <Route exact path="/contact" element={<Contact />}></Route>
         </Routes>
       </div>
       <Footer />

@@ -32,7 +32,7 @@ const Navigation = () => {
 
   return (
     <header className='main-header' style={{ "position": "fixed", "top": "0", "zIndex": 9, "width": "100%" }}>
-      <Navbar expand="md" style={navbarStyle}>
+      <Navbar expand="md" style={navbarStyle} className='custom-navbar'>
         <NavbarBrand href="/">
           <div className='d-flex align-items-center'>
             <div className='site-logo me-2'>
@@ -52,6 +52,9 @@ const Navigation = () => {
             </NavItem>
             <NavItem className={activeItem === '/blogs' ? 'active' : ''}>
               <Link to="/blogs" onClick={() => setActiveItem('Blogs')}>Blogs</Link>
+            </NavItem>
+            <NavItem className={activeItem === '/contact' ? 'active' : ''}>
+              <Link to="/contact" onClick={() => setActiveItem('Contact')}>Contact Us</Link>
             </NavItem>
             {/* Uncomment for more nav items */}
             {/* <NavItem className={activeItem === 'About' ? 'active' : ''}>
