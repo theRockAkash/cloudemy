@@ -131,7 +131,6 @@ header {
   @media only screen and (max-width: 767px) {
     .custom-navbar{
       .navbar-collapse{
-        background-color: var(--dark_surfaceVariant) !important;
         flex-basis: unset !important;
         flex-grow: unset !important;
         width: 70%;
@@ -143,7 +142,10 @@ header {
         border-radius: 8px;
         top: 62px;
         right: 0.7rem;
+        position: fixed;
         ul{
+          background-color: var(--dark_surfaceVariant) !important;
+          height: 100%;
           li{
             a{
               width: 100%;
