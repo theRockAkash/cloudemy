@@ -128,7 +128,7 @@ header {
       outline: unset;
     }
   }
-  @media (max-width: 767px) {
+  @media only screen and (max-width: 767px) {
     .navbar-collapse{
       background-color: var(--dark_surfaceVariant);
       flex-basis: unset;
