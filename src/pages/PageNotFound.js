@@ -3,7 +3,6 @@ import "../assest/styles/pageNotFound.scss"
 const PageNotFound = () => {
   return (
     <div>
- <a href="/">
   <header className="top-header">
 </header>
 
@@ -39,8 +38,6 @@ const PageNotFound = () => {
   </div>
 
 </section>
-
-  </a>
     </div>
   );
 };
