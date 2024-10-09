@@ -33,11 +33,11 @@ const Home = () => {
         // Start the counter when the "counter" section is in view
         const interval = setInterval(() => {
           setCount((prevCount) => {
-            if (prevCount < 45000) {
+            if (prevCount < 50000) {
               return prevCount + 100;
             } else {
               clearInterval(interval);
-              return 45000;
+              return 50000;
             }
           });
         }, 100);
