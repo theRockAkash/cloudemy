@@ -10,7 +10,9 @@
   padding: 0;
   -webkit-text-size-adjust: none;
 }
-
+body{
+  overflow-x: hidden;
+}
 label {
   cursor: pointer;
 }
