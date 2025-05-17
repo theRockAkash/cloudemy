@@ -360,3 +360,27 @@ font-size:80px;
     margin: 20px 0;
     display: inline-block;}
     .contant_box_404{ margin-top:-50px;}
+
+.contact-info{
+  text-align: left;
+  p,a{
+    color: var(--dark_onSurfaceVariant);
+    margin-bottom: 10px;
+    display: block;
+    span{
+      margin-left: 8px;
+    }
+  }
+  .circle-icon{
+    display: inline;
+    background-color: var(--dark_secondaryContainer);
+    border-radius: 50%;
+    padding: 8px;
+    margin: 10px 0;
+    svg{    
+      height: 18px;
+      width: 18px;
+      color: var(--dark_onSecondaryContainer);
+    }
+  }
+}
